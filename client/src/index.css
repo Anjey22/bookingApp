@@ -1,0 +1,284 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom SweetAlert styles */
+.my-swal-container {
+  font-family: 'Arial', sans-serif;
+}
+
+.my-swal-popup {
+  background-color: #fff; /* Custom background color */
+}
+
+.my-swal-title {
+  font-size: 24px;
+  text-align: center;
+}
+
+.my-swal-content {
+  font-size: 16px;
+  text-align: center;
+}
+
+.my-swal-close-button {
+  color: #333; /* Custom close button color */
+}
+
+/* Adjust as needed */
+
+
+.alert {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* NavBar */
+
+.navbar{
+background-color: #2039b3;
+}
+.sticky-navbar {
+  position: sticky;
+  z-index: 0;
+  top: 0;
+  height: 90px;
+}
+
+.navbar-brand{
+  color: white !important;
+}
+
+.nav-link{
+  color: white  !important
+}
+
+
+h1{
+  font-size: 20px !important;
+}
+.btn{
+  background-color: rgb(24, 104, 217) !important;
+  color: white !important;
+  border-radius: 5px !important;
+  padding: 5px !important;
+}
+
+.nav-item .dropdown{
+ background-color: #f0eff6;
+ border: rgb(239, 234, 234);
+ border-radius: 3px;
+ margin-right: 40px;
+}
+ 
+.roomsimg{
+  height: 350px;
+  width: 450px;
+  border-radius: 15px;
+}
+
+.carous{
+  width: 650px;
+}
+/* Loading.css */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.sweet-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for the login form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  background-color: #f0f2f5; /* Light background color */
+  padding: 20px;
+  margin-top: -50px; /* Adjust to move the container up */
+  background-image: url('bg1.jpg');
+}
+
+/* Login form styling */
+.login-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Form elements spacing */
+.login-form .mb-3 {
+  margin-bottom: 20px;
+}
+
+/* Form label styling */
+.login-form .form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Form control styling */
+.login-form .form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Help text styling */
+.login-form .form-text {
+  font-size: 12px;
+  color: #777;
+}
+
+/* Checkbox and label styling */
+.login-form .form-check-input {
+  margin-right: 10px;
+}
+
+.login-form .form-check-label {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Submit button styling */
+.login-form .btn {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-form .btn:hover {
+  background-color: #0056b3;
+}
+/* Centering Container Styles */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ background-image: url('./reg1.jpg');
+  margin: 0;
+  margin-top: -60px
+}
+
+/* Registration Form Styles */
+.registration-form {
+  background: #fff;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+.registration-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.registration-form div {
+  margin-bottom: 15px;
+}
+
+.registration-form input {
+  width: calc(100% - 20px); /* Adjusted for padding */
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.registration-form input:focus {
+  border-color: #007bff;
+}
+
+.registration-form .error {
+  color: red;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.registration-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pass {
+  position: relative;
+}
+
+.pass input[type="password"] {
+  padding-right: 30px; /* Adjust padding to make space for the button */
+}
+
+.pass .show-password {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Adjust the right position as needed */
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.show-password{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.show-password svg {
+  width: 20px; /* Adjust icon size */
+  height: auto;
+  color: #555; /* Adjust icon color */
+}
+
+
+
+

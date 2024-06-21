@@ -1,0 +1,365 @@
+.homescreen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    background-image: url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 30px;
+    position: fixed;
+    bottom: 600px;
+    background-color: white;
+    padding: 5px 0;
+    z-index: 1000;
+    width: 100%; /* Adjust width to be responsive */
+    max-width: 1000px; /* Limit max width */
+    box-sizing: border-box; /* Include padding in width */
+  }
+  
+  .search-container, .date-range-container {
+    margin: 0 10px;
+  }
+  
+  .filter-container {
+    margin: 0px 5px 0px 5px;
+  }
+  
+  .search-container {
+    width: 145px; /* Adjust width as needed */
+  }
+  
+  .date-range-container {
+    width: 340px; /* Adjust width as needed */
+    position: relative;
+  }
+  
+  .filter-container {
+    width: 80px; /* Adjust width as needed */
+  }
+  
+  .search-container input, .filter-container select, .date-range-toggle {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .date-range-toggle {
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  .date-range-picker {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-width: 350px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .date-range-picker.collapsed {
+    max-height: 0;
+  }
+  
+  .date-range-picker.expanded {
+    max-height: 400px; /* Adjust based on the height of the date range picker */
+  }
+  
+  .selected-dates {
+    position: relative;
+    right: 40px;
+  }
+  
+  .rooms-container {
+    margin-top: 20px;
+  }
+  
+  .btn-primary {
+    margin-top: 20px;
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 748px) {
+    .filters {
+      flex-direction: column;
+      align-items: center;
+      bottom: auto; /* Remove fixed positioning */
+      position: sticky; /* Change position to static */
+      top: 90px;
+      padding: 10px; /* Add more padding for better spacing */
+    }
+  
+    .search-container, .date-range-container, .filter-container {
+      width: 80%; /* Full width on smaller screens */
+      margin-bottom: 10px; /* Add margin between elements */
+    }
+    
+    .selected-dates {
+      position: static;
+      text-align: center; /* Center align on smaller screens */
+    }
+  }
+  
+  
+  .col-md-3 {
+    max-width: 300px; /* Adjust width as needed */
+  }
+  
+
+  /*.details{
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 200px;
+    z-index: 1000; 
+  }*/
+
+  .details{
+    line-height: 3px !important;
+    padding-top: 3px;
+  }
+
+  .rooms-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    
+  }
+  
+  .room-card {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+
+  }
+  
+  .room-image img {
+    width: 300px;
+    height: 170px;
+    object-fit: cover;
+  }
+  
+  .room-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .room-details h1 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+  }
+  
+  .room-details p {
+    margin: 5px 0;
+  }
+  
+  .view-details {
+    text-align: right;
+  }
+
+
+  /*Rooms CSS*/
+
+.room-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0px 20px rgba(1, 34, 95, 0.1);
+  max-width: 340px;
+  margin: 20px;
+}
+
+.room-image img {
+  width: 100%;
+  height: 200px;
+  display: block;
+}
+
+.room-details {
+  padding: 0 30px;
+  line-height: 15px;
+  background-color: #fff;
+  text-align: left;
+}
+
+.room-details h1 {
+  font-size: 1.5em;
+  margin-bottom: 1px;
+  line-height: 10px;
+}
+
+.room-details b {
+  display: block;
+}
+
+.view-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top:5px;
+}
+
+.btn {
+  flex: 1;
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+
+  
+  
+    /* Profile CSS */
+    /* Tabs CSS */
+.react-tabs__tab-list {
+  background-color: #fff;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  font-size: x-large;
+  top: 90px; /* Ensure the tabs are just below the navbar */
+  z-index: 900; /* Less than navbar's z-index */
+  background: #fff; /* Make sure the background covers content behind */
+}
+    
+
+
+    .profile {
+      width: 80%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding-left: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .profile h1, .profile h2, .profile p {
+      text-align: left;
+    }
+    
+
+    .admin {
+      margin: 0 auto;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .admin h1, .admin  h2,  .admin  p {
+      text-align: center;
+    }
+    
+
+
+    .styled-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 25px 0;
+      font-size: 0.9em;
+      font-family: 'Arial', sans-serif;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .styled-table thead tr {
+      background-color: #009879;
+      color: #ffffff;
+      text-align: center;
+    }
+    
+    .styled-table th,
+    .styled-table td {
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    
+    .styled-table tbody tr {
+      border-bottom: 1px solid #dddddd;
+    }
+    
+    .styled-table tbody tr:nth-of-type(even) {
+      background-color: #f3f3f3;
+    }
+    
+    .styled-table tbody tr:last-of-type {
+      border-bottom: 2px solid #009879;
+    }
+    
+    .styled-table tbody tr.active-row {
+      font-weight: bold;
+      color: #009879;
+    }
+    
+    .cancelled-booking {
+      background-color: #ffcccc;
+      color: red;
+    }
+
+
+
+.add-room-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.add-room-form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 500px;
+}
+
+.add-room-form input,
+.add-room-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.add-room-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #009879;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-room-form button:hover {
+  background-color: #007a63;
+}
