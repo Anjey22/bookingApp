@@ -199,10 +199,10 @@ function Admin() {
                     {bookings.map((booking) => (
                       <tr key={booking._id}>
                         <td>{booking._id}</td>
-                        <td>{booking.room}</td>
-                        <td>{booking.userId}</td>
-                        <td>{new Date(booking.fromDate).toLocaleDateString()}</td>
-                        <td>{new Date(booking.toDate).toLocaleDateString()}</td>
+                        <td>{booking.rooms}</td>
+                        <td>{booking.userid}</td>
+                        <td>{new Date(booking.fromdate).toLocaleDateString()}</td>
+                        <td>{new Date(booking.todate).toLocaleDateString()}</td>
                         <td>{booking.status}</td>
                       </tr>
                     ))}
